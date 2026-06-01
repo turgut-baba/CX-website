@@ -1,0 +1,162 @@
+.button{
+    background-color: var(--light-color);
+    padding: 0.65rem;
+    width: fit-content;
+    border-radius: 3rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    text-align: center;
+    border: none;
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
+    transition: background-color var(--button-animation-time) ease; /* Smooth transition */
+}
+
+.button a{
+    color: red;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color var(--button-animation-time) ease; /* Smooth transition */
+}
+
+.button:hover {
+    background-color: #ddd; /* New color on hover */
+}
+
+.button:hover a{
+    color: #fff; /* Text color on hover */
+}
+
+.button a {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight:  100;
+    text-align: center;
+    color: #f35626;
+    background-image: -webkit-linear-gradient(0deg, #f35626, #feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 10s infinite linear;
+}
+
+.vector-art{
+    fill: red;
+    transform-origin: center;
+    color: #f35626;
+    background-image: -webkit-linear-gradient(0deg, #f35626, #feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 10s infinite linear;
+}
+
+.circle {
+    top: -15px;
+    right: -40px;
+    position: absolute;
+}
+
+.circle-top {
+    bottom: -15px;
+    right: -40px;
+    position: absolute;
+}
+
+.solder{
+    position: absolute;
+}
+
+@-webkit-keyframes hue {
+    from {
+        -webkit-filter: hue-rotate(0deg);
+    }
+    to {
+        -webkit-filter: hue-rotate(-360deg);
+    }
+}
+
+.panel{
+    background-color: var(--light-color);
+    padding: 2rem;
+    justify-content: center;
+    border-radius: 2rem;
+    display: inline-block;
+    gap: 20px;
+    flex-direction: row;
+    color: black;
+    border: none;
+    box-sizing: border-box;
+}
+
+.info-panel{
+
+}
+
+.info{
+
+}
+
+
+.search-container {
+    /* Matches your button design */
+    background-color: rgba(255, 255, 255, 0.2);
+
+    /* 2. The magic blur effect on whatever is behind the bar */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    padding: 0.4rem; /* Slightly reduced to account for internal button padding */
+    padding-left: 1.5rem; /* Matches your left padding */
+    width: 100%;
+    max-width: 400px; /* Limits expansion on desktop */
+    border-radius: 3rem; /* Matches your pill shape */
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3); /* Matches your shadow */
+    /* border: 3px solid #000000; */
+    /* Layout styling */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Subtle focus effect on the container when typing */
+.search-container:focus-within {
+    box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.25);
+}
+
+.search-input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1rem;
+    color: inherit; /* Inherits text color from parent/body */
+    padding-right: 0.5rem;
+}
+
+.search-input::placeholder {
+    color: #999;
+}
+
+.search-input::placeholder {
+    color: #ffffff; /* Turns the placeholder text white */
+    opacity: 0.8;   /* Slightly lowers opacity so it feels like a placeholder */
+}
+
+.search-button {
+    background-color: transparent; /* Seamless blend */
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: #555; /* Default icon color */
+    transition: background-color var(--button-animation-time) ease, color var(--button-animation-time) ease;
+}
+
+/* Hover state for the magnifying glass button */
+.search-button:hover {
+    background-color: rgba(0, 0, 0, 0.05); /* Slight dark overlay on hover */
+    color: #000;
+}

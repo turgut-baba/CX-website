@@ -1,0 +1,178 @@
+:root {
+  --background-light: white;
+  --background-dark: black;
+
+  --light-color: white;
+
+  --button-animation-time: 0.25s;
+}
+
+#root {
+  max-width: 100vw;
+  width: 100%;
+  text-align: center;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+}
+
+ul {
+  list-style: none;
+  padding: 0; /* Optional: Remove default padding */
+  margin: 0;  /* Optional: Remove default margin */
+}
+
+ul a{
+  color: white;
+  text-decoration: none;
+}
+
+.header-container {
+  height: 5rem;
+  display: flex;
+
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 3vw;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5vw;
+}
+
+.header-logo img {
+  height: 5.5rem;
+  width: auto;
+  padding-right: 2vw;
+}
+
+.header-links{
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  padding-right: 5vw;
+}
+
+.header-links li{
+  margin: 1rem;
+}
+
+.content-container{
+  height: 75%;
+  width: 100%;
+    display: flex;
+
+}
+
+.info{
+  width: 80%;
+}
+
+.info p{
+  width: 80%;
+}
+
+#start{
+  width: 100%;
+  top: -5vw;
+  position: relative;
+  display: flex;
+}
+
+#getting-started {
+  justify-content: center;
+  position: absolute;
+  top: -1.5rem;
+  background-color: black;
+}
+
+.text-section{
+  justify-content: left;
+  text-align: left;
+  padding: 5vw;
+  width: 40vw;
+}
+
+#install {
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
+}
+
+sub{
+  color: darkgray;
+}
+
+.pcb-design{
+  width: 50vw;
+  position: relative;
+}
+
+.crc-1{
+  bottom: 217px;
+  left: 675px;
+}
+
+.sd-1{
+  width: 240px;
+  height: 300px;
+}
+
+.sd-1-p{
+  bottom: -3vw;
+}
+
+.sd-2{
+  width: 240px;
+  height: 400px;
+}
+
+.sd-2-p{
+  bottom: -3vw;
+  left: 50px;
+}
+
+.sd-3{
+  width: 400px;
+  height: 240px;
+}
+
+.sd-3-p{
+  bottom: -8vw;
+  left: 120px;
+}
+
+.sd-4{
+  width: 320px;
+  height: 240px;
+}
+
+.sd-4-p{
+  bottom: -4vw;
+  left: 380px;
+}
+
+/* ----------------------------   TOP ---------------------------- */
+
+.sd-5{
+  width: 400px;
+  height: 240px;
+}
+
+.sd-5-p{
+  left: 120px;
+  top: -150px;
+}
+
