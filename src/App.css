@@ -176,3 +176,10 @@ sub{
   top: -150px;
 }
 
+.info-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
